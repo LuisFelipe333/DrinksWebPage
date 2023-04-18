@@ -1,4 +1,4 @@
-package models;
+package com.bluelight.drinks.models;
 
 import jakarta.persistence.*;
 
