@@ -8,23 +8,23 @@ public class DrinkType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(name = "drink_type_name", length = 60, nullable = false, unique = true)
     private String drinkTypeName;
     @Column(name = "cont_alcohol", nullable = false)
-    private boolean contAlcohol;
+    private Boolean contAlcohol;
     @Column(name = "has_brands", nullable = false)
-    private boolean hasBrands;
+    private Boolean hasBrands;
 
     public DrinkType(){
 
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -36,19 +36,19 @@ public class DrinkType {
         this.drinkTypeName = drinkTypeName;
     }
 
-    public boolean isContAlcohol() {
+    public Boolean getContAlcohol() {
         return contAlcohol;
     }
 
-    public void setContAlcohol(boolean contAlcohol) {
+    public void setContAlcohol(Boolean contAlcohol) {
         this.contAlcohol = contAlcohol;
     }
 
-    public boolean isHasBrands() {
+    public Boolean getHasBrands() {
         return hasBrands;
     }
 
-    public void setHasBrands(boolean hasBrands) {
+    public void setHasBrands(Boolean hasBrands) {
         this.hasBrands = hasBrands;
     }
 }
